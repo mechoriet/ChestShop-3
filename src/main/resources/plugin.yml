@@ -1,14 +1,7 @@
 name: ChestShop
-
 main: com.Acrobot.ChestShop.ChestShop
-
 version: ${project.version}
-
-#for CButD
-dev-url: http://dev.bukkit.org/server-mods/chestshop/
-
-
-author: Acrobot
+author: Dart2112
 description: >
              A chest shop for economy plugins.
 

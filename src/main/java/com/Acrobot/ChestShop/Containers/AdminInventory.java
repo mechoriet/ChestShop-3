@@ -1,5 +1,6 @@
 package com.Acrobot.ChestShop.Containers;
 
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.inventory.InventoryType;
@@ -18,6 +19,10 @@ import java.util.ListIterator;
 public class AdminInventory implements Inventory {
     public int getSize() {
         return Integer.MAX_VALUE;
+    }
+
+    public Location getLocation() {
+        return null;
     }
 
     public int getMaxStackSize() {
@@ -44,6 +49,16 @@ public class AdminInventory implements Inventory {
 
     public HashMap<Integer, ItemStack> removeItem(ItemStack... itemStacks) {
         return new HashMap<Integer, ItemStack>();
+    }
+
+    public ItemStack[] getStorageContents() {
+        return new ItemStack[]{
+                new ItemStack(Material.CHEST, 1),
+                new ItemStack(Material.AIR, Integer.MAX_VALUE)
+        };
+    }
+
+    public void setStorageContents(ItemStack[] itemStacks) {
     }
 
     public ItemStack[] getContents() {
