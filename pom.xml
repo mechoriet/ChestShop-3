@@ -77,8 +77,8 @@
 
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
-            <artifactId>VaultAPI</artifactId>
-            <version>1.6</version>
+            <artifactId>Vault</artifactId>
+            <version>1.4.2-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
